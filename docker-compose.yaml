@@ -1,0 +1,10 @@
+services:
+  tether:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: go-tether
+    environment:
+      - BASE_URI=https://app.tether.to/api/v1
+      - API_KEY=?
+      - API_SECRET=?
